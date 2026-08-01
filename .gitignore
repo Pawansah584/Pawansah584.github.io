@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.vscode/
+
+# Raw source files (already copied/renamed into assets/) — kept locally, not published
+/Profile (2).pdf
+/my-photo.png
+/certificate*.pdf
+/certificate*.jpeg
