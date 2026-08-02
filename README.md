@@ -1,4 +1,4 @@
-# Pawan Kumar Sah — Portfolio
+# Pawan Kumar Sah | Portfolio
 
 Personal portfolio site, built with plain HTML, CSS and JavaScript (no framework, no build step) and deployed on GitHub Pages.
 
@@ -31,4 +31,4 @@ python -m http.server 8000
 
 ## Deploying
 
-Push to the `main` branch of a repo named `Pawansah584.github.io` — GitHub Pages serves it automatically at the root domain.
+Push to the `main` branch of a repo named `Pawansah584.github.io`. GitHub Pages serves it automatically at the root domain.

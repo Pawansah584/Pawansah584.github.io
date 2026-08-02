@@ -3,10 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pawan Kumar Sah | Cybersecurity & Ethical Hacking</title>
-<meta name="description" content="Portfolio of Pawan Kumar Sah — Cybersecurity & Ethical Hacking student specializing in red teaming, applied cryptography and network security.">
+<title>Pawan Kumar Sah | Network & Cloud Security</title>
+<meta name="description" content="Portfolio of Pawan Kumar Sah, a Network and Cloud Security enthusiast with a First Class Honours BSc in Ethical Hacking and Cybersecurity from Coventry University. Focused on network security, cloud technologies, web security and cryptography.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><text y=%22.9em%22 font-size=%2222%22>🛡️</text></svg>">
 <link rel="stylesheet" href="css/style.css">
+<script>
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
 </head>
 <body>
 
@@ -26,10 +33,17 @@
       <a href="assets/resume.pdf" class="btn btn-sm btn-primary" target="_blank" rel="noopener">Resume</a>
     </nav>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      <svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-    </button>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -42,8 +56,8 @@
       <div class="hero-text fade-up">
         <p class="eyebrow mono">// Hi, I'm</p>
         <h1>Pawan Kumar Sah</h1>
-        <p class="hero-tagline">Cybersecurity &amp; Ethical Hacking Student</p>
-        <p class="hero-sub">BSc (Hons) Ethical Hacking &amp; Cybersecurity @ Coventry University · Focused on red teaming, applied cryptography &amp; network security. I build things that demonstrate security concepts end-to-end.</p>
+        <p class="hero-tagline">Network and Cloud Security Enthusiast</p>
+        <p class="hero-sub">Recently graduated with a BSc (Hons) in Ethical Hacking and Cybersecurity from Coventry University, achieving First Class Honours. Focused on network security, cloud technologies, web security and cryptography.</p>
 
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -87,28 +101,28 @@
 
       <div class="about-grid">
         <p class="about-text fade-up">
-          I'm an undergraduate cybersecurity student based in Kathmandu, Nepal, currently pursuing a
-          <strong>BSc (Hons) in Ethical Hacking and Cybersecurity</strong> at Coventry University, delivered
-          through Softwarica College of IT &amp; E-Commerce. My focus areas are network security, red team
-          operations, and applied cryptography — backed by hands-on experience with Cisco networking, PKI systems,
-          and web application security. I like building projects that demonstrate security concepts end-to-end:
-          from a working PKI-backed prescription system to red-team engagements mapped against MITRE ATT&amp;CK.
-          Outside of coursework, I've represented my college in several CTFs and hackathons, and completed
-          internships in network operations and technical support.
+          I'm a Network and Cloud Security enthusiast based in Kathmandu, Nepal. I recently graduated with a
+          <strong>BSc (Hons) in Ethical Hacking and Cybersecurity</strong> from Coventry University, delivered
+          through Softwarica College of IT &amp; E-Commerce, achieving First Class Honours. My focus areas are
+          network security, cloud technologies, web security and cryptography, supported by hands-on experience
+          with Cisco networking, PKI systems and web application security. I enjoy building projects that
+          demonstrate security concepts end to end, from a working PKI backed prescription system to red team
+          engagements mapped against MITRE ATT&amp;CK. Outside of coursework, I represented my college in several
+          CTFs and hackathons, and completed internships in network operations and technical support.
         </p>
 
         <div class="about-cards fade-up" style="--delay:120ms">
           <div class="info-card">
             <h3>Education</h3>
             <div class="edu-item">
-              <p class="edu-degree">BSc (Hons) Ethical Hacking &amp; Cybersecurity</p>
+              <p class="edu-degree">BSc (Hons) Ethical Hacking &amp; Cybersecurity <span class="edu-honours">First Class Honours</span></p>
               <p class="edu-school">Coventry University · Softwarica College of IT &amp; E-Commerce</p>
-              <p class="edu-date mono">Aug 2023 — Aug 2026</p>
+              <p class="edu-date mono">Aug 2023 - Aug 2026</p>
             </div>
             <div class="edu-item">
-              <p class="edu-degree">High School, NEB — Computer Science</p>
+              <p class="edu-degree">High School, NEB, Computer Science</p>
               <p class="edu-school">Xavier International College</p>
-              <p class="edu-date mono">Jun 2020 — Jun 2022</p>
+              <p class="edu-date mono">Jun 2020 - Jun 2022</p>
             </div>
           </div>
 
@@ -116,7 +130,7 @@
             <h3>Quick Facts</h3>
             <ul class="fact-list">
               <li><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Kathmandu, Nepal</li>
-              <li><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Red Teaming · Cryptography · Network Security</li>
+              <li><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Network Security · Cloud Security · Cryptography</li>
               <li><svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Open to internships &amp; junior security roles</li>
             </ul>
           </div>
@@ -133,12 +147,14 @@
 
       <div class="skills-grid">
         <div class="skill-group fade-up">
-          <h3>Security &amp; Offensive</h3>
+          <h3>Security &amp; Cryptography</h3>
           <div class="chip-row">
-            <span class="chip">Red Teaming &amp; Adversary Emulation</span>
-            <span class="chip">MITRE ATT&amp;CK</span>
+            <span class="chip">Network Security</span>
+            <span class="chip">Cloud Security Fundamentals</span>
             <span class="chip">Web Application Security</span>
             <span class="chip">Applied Cryptography &amp; PKI</span>
+            <span class="chip">Red Teaming &amp; Adversary Emulation</span>
+            <span class="chip">MITRE ATT&amp;CK</span>
             <span class="chip">Digital Forensics</span>
             <span class="chip">Endpoint Security</span>
             <span class="chip">CTF / Capture the Flag</span>
@@ -183,11 +199,11 @@
       <article class="project-featured fade-up">
         <div class="project-featured-label mono">Featured Project</div>
         <div class="project-featured-body">
-          <h3>RxShield — Secure Digital Prescription System</h3>
+          <h3>RxShield: Secure Digital Prescription System</h3>
           <p>
             A PKI-backed prototype for secure digital prescriptions: an X.509 certificate authority, RSA-PSS
             digital signatures, AES-256-GCM payload encryption, OTP-bound two-factor redemption, certificate
-            revocation, and tamper-evident encrypted audit logging — with both a role-based CLI and a FastAPI
+            revocation, and tamper-evident encrypted audit logging, with both a role-based CLI and a FastAPI
             web interface.
           </p>
           <div class="chip-row">
@@ -218,7 +234,7 @@
         <div class="timeline-item fade-up">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <p class="timeline-date mono">Jun 2025 — Aug 2025</p>
+            <p class="timeline-date mono">Jun 2025 - Aug 2025</p>
             <h3>Technical Support Expert</h3>
             <p class="timeline-org">Vianet Communication · Lalitpur District, Nepal</p>
             <ul>
@@ -232,7 +248,7 @@
         <div class="timeline-item fade-up" style="--delay:100ms">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
-            <p class="timeline-date mono">Feb 2025 — Apr 2025</p>
+            <p class="timeline-date mono">Feb 2025 - Apr 2025</p>
             <h3>IT &amp; NT Networks Intern</h3>
             <p class="timeline-org">Nepal Telecom · Lalitpur District, Nepal</p>
             <ul>
@@ -253,7 +269,7 @@
       <h2 class="section-title fade-up">Certifications &amp; Achievements</h2>
 
       <div class="cert-category fade-up">
-        <h3 class="cert-category-title">Academic Modules — Coventry University</h3>
+        <h3 class="cert-category-title">Academic Modules, Coventry University</h3>
         <div class="cert-grid" id="certGrid-academic"></div>
       </div>
 
@@ -292,7 +308,7 @@
       <h2 class="section-title fade-up">Let's Connect</h2>
       <p class="contact-text fade-up">
         Open to cybersecurity internships, SOC/network security roles, and collaboration on security projects.
-        Feel free to reach out — I usually respond within a day or two.
+        Feel free to reach out. I usually respond within a day or two.
       </p>
 
       <div class="contact-actions fade-up">
@@ -321,7 +337,7 @@
 
 <footer class="footer">
   <div class="container footer-inner">
-    <p>&copy; <span id="year"></span> Pawan Kumar Sah. Built with HTML, CSS &amp; JS — hosted on GitHub Pages.</p>
+    <p>&copy; <span id="year"></span> Pawan Kumar Sah. Built with HTML, CSS and JS, hosted on GitHub Pages.</p>
   </div>
 </footer>
 

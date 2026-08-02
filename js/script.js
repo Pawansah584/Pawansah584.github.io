@@ -1,6 +1,15 @@
 // ===== Footer year =====
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// ===== Theme toggle =====
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+
 // ===== Mobile nav toggle =====
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
@@ -51,14 +60,14 @@ document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
 // ===== Project data (excludes RxShield, which is hand-authored as the featured card) =====
 const projects = [
   {
-    title: 'Atlas Red Team — MITRE ATT&CK Layer',
-    description: 'A MITRE ATT&CK Navigator layer mapping techniques used in a red team adversary emulation against a simulated corporate portal — phishing, credential harvesting, OSINT reconnaissance, and C2 persistence.',
+    title: 'Atlas Red Team: MITRE ATT&CK Layer',
+    description: 'A MITRE ATT&CK Navigator layer mapping techniques used in a red team adversary emulation against a simulated corporate portal, covering phishing, credential harvesting, OSINT reconnaissance, and C2 persistence.',
     tags: ['Red Teaming', 'MITRE ATT&CK', 'Adversary Emulation'],
     url: 'https://github.com/Pawansah584/atlas-redteam-mitre-layer'
   },
   {
     title: 'Vuln-Atlas Webapp',
-    description: 'The intentionally vulnerable target application built for the Atlas red team engagement — used to practice and demonstrate exploitation of common web application weaknesses.',
+    description: 'The intentionally vulnerable target application built for the Atlas red team engagement, used to practice and demonstrate exploitation of common web application weaknesses.',
     tags: ['Python', 'Web Security', 'Red Team Target'],
     url: 'https://github.com/Pawansah584/Vuln-Atlas-webapp'
   },
@@ -88,12 +97,12 @@ const projects = [
   },
   {
     title: 'CCNA Labs &amp; Projects',
-    description: 'A collection of networking labs and projects built while preparing for CCNA — covering routing, switching, and initial device configuration.',
+    description: 'A collection of networking labs and projects built while preparing for CCNA, covering routing, switching, and initial device configuration.',
     tags: ['Networking', 'Cisco', 'CCNA'],
     url: 'https://github.com/Pawansah584/CCNA-Labs-Projects'
   },
   {
-    title: 'Web Dev Coursework — Database',
+    title: 'Web Development Coursework: Database',
     description: 'Database design and implementation coursework for a web development module.',
     tags: ['SQL', 'Database Design'],
     url: 'https://github.com/Pawansah584/Cw2_Database'
@@ -124,19 +133,19 @@ const certificates = {
     { title: 'Applied Forensics', meta: 'Coventry University · 10 Credits', file: 'assets/certificates/applied-forensics.pdf' }
   ],
   ctf: [
-    { title: 'Hackfest 2025 — Capture the Flag', meta: 'Softwarica College · Team NoobSec · Jan 2025', file: 'assets/certificates/hackfest-2025-ctf.jpeg' },
-    { title: 'Hackfest 2.0 — Defend the Future', meta: 'Softwarica IT Club · Jul 2025', file: 'assets/certificates/hackfest-2.0-ctf.jpeg' },
+    { title: 'Hackfest 2025: Capture the Flag', meta: 'Softwarica College · Team NoobSec · Jan 2025', file: 'assets/certificates/hackfest-2025-ctf.jpeg' },
+    { title: 'Hackfest 2.0: Defend the Future', meta: 'Softwarica IT Club · Jul 2025', file: 'assets/certificates/hackfest-2.0-ctf.jpeg' },
     { title: 'TRI-KODE: The Ultimate Hackathon', meta: 'Softwarica IT Club · Team Ninja Debuggers', file: 'assets/certificates/tri-kode-hackathon.jpeg' },
     { title: 'Capture the Flag (CTF)', meta: 'Softwarica College · Coventry University · Oct 2023', file: 'assets/certificates/ctf-2023.jpeg' },
     { title: 'DataForGood Nepal 2026 Hackathon', meta: '"Analytics for Society" · Institute of Analytics', file: 'assets/certificates/dataforgood-hackathon-2026.pdf' }
   ],
   training: [
-    { title: 'CCNA — 90 Hours Professional Training', meta: 'Broadway Infosys · Feb – Apr 2025', file: 'assets/certificates/ccna-broadway-infosys.jpeg' },
+    { title: 'CCNA: 90 Hours Professional Training', meta: 'Broadway Infosys · Feb - Apr 2025', file: 'assets/certificates/ccna-broadway-infosys.jpeg' },
     { title: 'Internship Completion Letter', meta: 'Nepal Telecom (Nepal Doorsanchar Co. Ltd.) · Apr 2025', file: 'assets/certificates/nepal-telecom-internship.jpeg' }
   ],
   community: [
     { title: 'IT Club Recognition', meta: 'IT &amp; Editorial Club, Softwarica College', file: 'assets/certificates/it-club-recognition.jpeg' },
-    { title: '"Why Open Source is Important" — Session', meta: 'IT &amp; Editorial Club × Owl Integration · Dec 2023', file: 'assets/certificates/open-source-session-2023.jpeg' }
+    { title: 'Panel Session: "Why Open Source is Important"', meta: 'IT &amp; Editorial Club × Owl Integration · Dec 2023', file: 'assets/certificates/open-source-session-2023.jpeg' }
   ]
 };
 
